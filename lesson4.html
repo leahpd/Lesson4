@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collage - B4</title>
+
+	<style type= "text/css">
+		* {
+			box-sizing: border-box;
+		}
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background: #cab7ff;
+		}
+		.container {
+			background: #cab7ff;
+			min-height: 200vh;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-areas:
+				"p1 p1 p1 p1"
+				"p2 p3 p4 p5"
+				"p6 p6 p7 p7";
+			grid-gap:10px;
+			padding: 10px;
+		}
+
+		.item {
+			background: blue;
+			min-height: 100px;
+			min-width::100px;
+		}
+		#photo1 {
+			grid-area:p1;
+			background: url(https://i0.wp.com/popfection.net/wp-content/uploads/2018/04/ariana-header.png?fit=1150%2C500&ssl=1);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo2 {
+			grid-area:p2;
+			background: url(https://ih0.redbubble.net/image.475953218.2608/flat,1000x1000,075,f.jpg);
+			background-size: cover;
+			background-position: center;	
+		}
+
+		#photo3 {
+			grid-area:p3;
+			background: url(https://i.pinimg.com/originals/86/2c/4d/862c4d3e719f8bd7718c06f22ab1e33d.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo4 {
+			grid-area:p4;
+			background: url(https://i.pinimg.com/originals/ef/99/74/ef99743c5da0edddd9ca78731958bdec.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo5 {
+			grid-area:p5;
+			background: url(https://pbs.twimg.com/media/DldLLDmWwAYvzHm.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo6 {
+			grid-area:p6;
+			background: url(https://pbs.twimg.com/media/Dh_9XSjWsAICd7H.jpg);
+			background-size: cover;
+			background-position: center;
+}
+		 #photo7 {
+		 	grid-area:p7;
+		 	background: url(https://pbs.twimg.com/media/CSiagTKVAAA7gdi.jpg);
+			background-size: cover;
+			background-position: center;
+		 }
+		
+	</style>
+</head>
+<body>
+  <div class= "container">
+	<div class= "item" id="photo1">
+	</div>
+
+	<div class= "item" id="photo2">
+	</div>
+
+	<div class= "item" id="photo3">
+	</div>
+
+	<div class= "item" id="photo4">
+	</div>
+
+	<div class= "item" id="photo5">
+	</div>
+
+	<div class= "item" id="photo6">
+	</div>
+	
+	<div class= "item" id="photo7">
+	</div>
+</div>
+
+</body>
+</html>
